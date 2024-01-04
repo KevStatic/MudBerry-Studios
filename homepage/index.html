@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,23 +9,144 @@
             Mudberry Studios
         </title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
         <link rel="stylesheet" href="./index.css">
-        <link rel="javaSheet" href="./index.js">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
         <script src="https://cdn.tailwindcss.com"></script>
+        
     </head>
 
     <body>
         <!-- Header -->
         <header>
             <div class="logo-section">
-                hello
+
+                <div class="bar-text" style="padding-left: 50px; height: 130px; background-color: #88AB8E;" id="spacebetween"></div>
+
+                <a class="logo-img" href="./index.html" style="background-color: #88AB8E; height: 130px;">
+                    <img src="../assets/photos/logo.png" alt="homepage">
+                </a>
+            
+                <div class="bar-text" style="padding-left: 50px; height: 130px; background-color: #88AB8E;" id="spacebetween"></div>
+
+                <div class="bar-text" style="padding-left: 260px; height: 130px;" id="spacebetween"></div>
+                
+                <nav>
+                    <div class="nav-tags">
+                        <ul>
+                            <li class="nav-item" style="margin-top: 15px;"><a href="#"> Learn </a></li>
+                            <li class="nav-item" style="margin-top: 15px;"><a href="#"> About </a></li>
+                            <li class="nav-item" style="margin-top: 15px;"><a href="#"> Design </a></li>
+                            <li class="nav-item" style="margin-top: 15px;"><a href="#"> Activities </a></li>
+                        </ul>
+                        <div class="nav-item vl"> </div>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </div>
+                </nav>
             </div>
         </header>
+
+        <!--Body-->
+        <div class="body-background">
+            <div class="body-header">
+                "Life is just like clay, It gets shaped by our own hands"
+            </div>
+            <div class="learn-page">
+                <button class="button-main">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <section class="hiddenn split-grid-two" id="video-container">
+            <div class="body-content">
+                <div class="body-content-video1">
+                    <video autoplay muted>
+                        <source src="../assets/videos/mudberry reel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="body-content">
+                <h1>
+                    The art and the artist
+                </h1>
+                <p>
+                    Dive into the enchanting world of clay molding, a realm where the alchemy of hands transforms formless clay into extraordinary vases and intricate face masks. Our vibrant community celebrates the dance of creativity, where each sculpted piece narrates a tale of passion and imagination. Discover the joy of shaping raw material into art, as our skilled artisans craft a symphony of forms. Join us in this tactile journey, where the malleability of clay mirrors the endless possibilities of self-expression. Unleash your artistic spirit, sculpt timeless wonders, and become part of a community that molds not just clay, but dreams and inspirations.
+
+                </p>
+                <img class="giffy-style" src="../assets/videos/giffy.gif">
+            </div>
+        </section>
+
+        <section class="hiddenn split-grid-two-col">
+            <div class="gallery-content">
+                <h1>
+                    Gallery
+                </h1>
+            </div>
+            <div class="gallery-show">
+                <div class="pic sometry">
+                    <img src="../assets/photos/01.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/02.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/03.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/04.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/05.jpg">
+                </div>
+            </div>
+            <div class="gallery-show">
+                <div class="pic sometry">
+                    <img src="../assets/photos/06.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/07.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/08.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/09.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/10.jpg">
+                </div>
+            </div>
+            <div class="gallery-show">
+                <div class="pic sometry">
+                    <img src="../assets/photos/11.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/12.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/13.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/14.jpg">
+                </div>
+                <div class="pic sometry">
+                    <img src="../assets/photos/15.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="hiddenn">
+            <h1> SOMETHING </h1>
+        </section>
+
+        <script defer src="./index.js"></script>
 
     </body>
 </html>
