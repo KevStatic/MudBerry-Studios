@@ -28,3 +28,29 @@ const obs = new IntersectionObserver((entries) => {
 
 const hiddenGalleryElements = document.querySelectorAll('.sometry');
 hiddenGalleryElements.forEach((el) => obs.observe(el));
+
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.getElementById('header');
+
+    window.onscroll = function () {
+        // Add or remove the "shrink" class based on scroll position
+        if (window.pageYOffset > 50) {
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    };
+});
+
+distance.oninput = e => {
+    wrap.style.setProperty('--distance', e.target.value + '%')
+}
+  
+thickness.oninput = e => {
+    wrap.style.setProperty('--border', e.target.value + 'px')
+}
+
+function toggleNavItems() {
+    const navItems = document.getElementById('nav-items');
+    navItems.classList.toggle('nav-show');
+}
